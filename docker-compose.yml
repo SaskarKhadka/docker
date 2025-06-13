@@ -1,6 +1,7 @@
 services:
   app:
-    image: ./express-app
+    build: ./express-app
+    image: saskarkhadka/express-app
     ports:
       - 8080:8080
     restart: unless-stopped
