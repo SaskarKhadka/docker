@@ -26,6 +26,6 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         platforms: linux/amd64,linux/arm64
-        context: .
+        context: ./express_app/Dockerfile
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/sample-express-app:latest
